@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Technical documentation page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WebCringe: Museum of Bad Web Dev</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>🧟‍♀️ WebCringe Museum</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#50_Scripts,_1_Page">50 Scripts, 1 Page</a>
+    <a class="nav-link" href="#Inline_Everything">Inline Everything</a>
+    <a class="nav-link" href="#Infinite_<br>s">Infinite &lt;br&gt;s</a>
+    <a class="nav-link" href="#jQuery_in_2025">jQuery in 2025</a>
+    <a class="nav-link" href="#Color_Chaos">Color Chaos</a>
+    <a class="nav-link" href="#Z-Index_Wars">Z-Index Wars</a>
+    <a class="nav-link" href="#Reference">Reference</a>
+  </nav>
+
+  <main id="main-doc">
+    <!-- Section 1 -->
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Welcome to WebCringe: an interactive, slightly sarcastic guide to the worst crimes committed in the history of front-end development.</p>
+      <p>We’re not here to judge… okay maybe just a little. But mostly, we’re here to learn and laugh.</p>
+      <p>Each section below highlights a common (and painful) mistake, complete with examples and fixes.</p>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="main-section" id="50_Scripts,_1_Page">
+      <header>50 Scripts, 1 Page</header>
+      <p>Nothing says "performance optimized" like 50 <tags loading serially.</p>
+      <p>This will ensure your page loads in 2045.</p>
+      <code>
+        &lt;script src="jquery.js"&gt;&lt;/script&gt;<br>
+        &lt;script src="bootstrap.js"&gt;&lt;/script&gt;<br>
+        &lt;script src="some-emoji-plugin.js"&gt;&lt;/script&gt;
+      </code>
+      <p><strong>Fix:</strong> Use bundlers like Webpack or Vite to combine and defer script loading.</p>
+      <ul>
+        <li>Slow as molasses</li>
+        <li>Conflicting libraries</li>
+        <li>Console screaming</li>
+      </ul>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="main-section" id="Inline_Everything">
+      <header>Inline Everything</header>
+      <p>If your entire style and logic are inside HTML attributes, congrats! You're now unmaintainable.</p>
+      <code>
+        &lt;div style="color:hotpink;" onclick="alert('lol')"&gt;Click me!&lt;/div&gt;
+      </code>
+      <p><strong>Fix:</strong> Separate concerns. Use external CSS and JS like a civilized dev.</p>
+      <ul>
+        <li>Hard to debug</li>
+        <li>Breaks scaling</li>
+        <li>Style and logic chaos</li>
+      </ul>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="main-section" id="Infinite_<br>s">
+      <header>Infinite &lt;br&gt;s</header>
+      <p>Need space? Just keep smashing that `<br>` key, right?</p>
+      <code>
+        &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+      </code>
+      <p><strong>Fix:</strong> Use proper spacing via CSS: `margin`, `padding`, or Flexbox.</p>
+      <ul>
+        <li>Unresponsive layout</li>
+        <li>Impossible to maintain</li>
+        <li>Mobile disaster</li>
+      </ul>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="main-section" id="jQuery_in_2025">
+      <header>jQuery in 2025</header>
+      <p>jQuery was great. But so were floppy disks. Let it go.</p>
+      <code>
+        $('#modal').fadeIn();
+      </code>
+      <p><strong>Fix:</strong> Use modern JS or frameworks like React, Vue, or just native DOM.</p>
+      <ul>
+        <li>Not tree-shakeable</li>
+        <li>Heavy dependency</li>
+        <li>Conflicts with modern frameworks</li>
+      </ul>
+    </section>
+
+    <!-- Section 6 -->
+    <section class="main-section" id="Color_Chaos">
+      <header>Color Chaos</header>
+      <p>RGB values everywhere. No variables. No mercy.</p>
+      <code>
+        &lt;div style="color: rgb(123, 45, 67); background: rgb(5, 5, 5);"&gt;Ow, my eyes&lt;/div&gt;
+      </code>
+      <p><strong>Fix:</strong> Use CSS variables, token systems, and accessibility guidelines.</p>
+      <ul>
+        <li>Inconsistent branding</li>
+        <li>Poor readability</li>
+        <li>Hard to change themes</li>
+      </ul>
+    </section>
+
+    <!-- Section 7 -->
+    <section class="main-section" id="Z-Index_Wars">
+      <header>Z-Index Wars</header>
+      <p>“Just add 9999 to the z-index. It’ll totally work.”</p>
+      <code>
+        .modal { z-index: 99999999; }
+      </code>
+      <p><strong>Fix:</strong> Use stacking contexts and CSS structure intentionally.</p>
+      <ul>
+        <li>Stacking chaos</li>
+        <li>Hidden bugs</li>
+        <li>Popups behind popups</li>
+      </ul>
+    </section>
+
+    <!-- Section 8 -->
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <p>Inspired by real dev tragedies and StackOverflow nightmares.</p>
+      <p>Use MDN Web Docs, CSS Tricks, and your own patience to build better web experiences.</p>
+      <p>This project is parody + pedagogy. Roast with care, code with love.</p>
+    </section>
+  </main>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
